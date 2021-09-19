@@ -10,7 +10,7 @@ const Item = () => {
         
         <div className={Styles.parent}>
             <div className={Styles.parent_Main}>
-                <>
+              
                 
                 {products.map((p,index)=> {
 
@@ -41,7 +41,7 @@ const Item = () => {
                     )
                 })}
 
-               </>
+              
             </div>
         </div>
     );

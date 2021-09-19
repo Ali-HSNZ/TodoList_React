@@ -18,7 +18,7 @@ const reduce = (state , action) => {
     switch(action.type){
         
         case 'AddProduct' : {
-            return {Name : action.Name, Price : action.Price , describe : action.Des , categori: action.Category, imgSrc : action.ImgSrc}
+            return [...state,{Name : action.Name, Price : action.Price , describe : action.Des , categori: action.Category, imgSrc : action.ImgSrc}]
         }
         case 'Search' : {
             
@@ -42,18 +42,18 @@ const reduceCategory = (state , action) => {
     switch(action.type){
         case 'AddCategory' : {
 
-            return [{name : action.event}]
+            return [...state,{name : action.event}]
         }
         default: return state
     }
 }
 
 
-const product = createContext()
-const setProduct = createContext()
+const Product = createContext()
+const SetProduct = createContext()
 
-const categori = createContext()
-const setCategori = createContext()
+const Categori = createContext()
+const SetCategori = createContext()
 
 const  ContextProvider= ({children}) => {
 
@@ -63,24 +63,24 @@ const  ContextProvider= ({children}) => {
 
     return ( 
        
-        <product.Provider value={products}>
-            <setProduct.Provider value={dispatch}>
+        <Product.Provider value={products}>
+            <SetProduct.Provider value={dispatch}>
 
-                <categori.Provider value={category}>
-                    <setCategori.Provider value={dispatchCategory}>
+                <Categori.Provider value={category}>
+                    <SetCategori.Provider value={dispatchCategory}>
                             {children}
-                    </setCategori.Provider>
-                </categori.Provider>
+                    </SetCategori.Provider>
+                </Categori.Provider>
                
-            </setProduct.Provider>
-        </product.Provider>
+            </SetProduct.Provider>
+        </Product.Provider>
     );
 }
  
 export default ContextProvider;
 
-export const Products = () => useContext(product)  
-export const SetProducts = () => useContext(setProduct)  
+export const Products = () => useContext(Product)  
+export const SetProducts = () => useContext(SetProduct)  
 
-export const Category = () => useContext(categori)  
-export const SetCategory = () => useContext(setCategori)  
+export const Category = () => useContext(Categori)  
+export const SetCategory = () => useContext(SetCategori)  
