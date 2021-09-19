@@ -9,7 +9,7 @@ const initialState = ([
   
 ])
 
-const initialStateCategory = ([''])
+const initialStateCategory = ([])
     
 
 
@@ -18,7 +18,7 @@ const reduce = (state , action) => {
     switch(action.type){
         
         case 'AddProduct' : {
-            return [{Name : action.Name, Price : action.Price , describe : action.Des , categori: action.Category, imgSrc : action.ImgSrc}]
+            return {Name : action.Name, Price : action.Price , describe : action.Des , categori: action.Category, imgSrc : action.ImgSrc}
         }
         case 'Search' : {
             
@@ -42,7 +42,7 @@ const reduceCategory = (state , action) => {
     switch(action.type){
         case 'AddCategory' : {
 
-            return [...state,{name : action.event}]
+            return [{name : action.event}]
         }
         default: return state
     }
