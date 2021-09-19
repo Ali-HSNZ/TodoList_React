@@ -62,17 +62,18 @@ const  ContextProvider= ({children}) => {
     const [category,dispatchCategory] = useReducer( reduceCategory , initialStateCategory)
 
     return ( 
-        <product.Provider value={products}>
-            <setProduct.Provider value={dispatch}>
+        <></>
+        // <product.Provider value={products}>
+        //     <setProduct.Provider value={dispatch}>
 
-                <categori.Provider value={category}>
-                    <setCategori.Provider value={dispatchCategory}>
-                            {children}
-                    </setCategori.Provider>
-                </categori.Provider>
+        //         <categori.Provider value={category}>
+        //             <setCategori.Provider value={dispatchCategory}>
+        //                     {children}
+        //             </setCategori.Provider>
+        //         </categori.Provider>
                
-            </setProduct.Provider>
-        </product.Provider>
+        //     </setProduct.Provider>
+        // </product.Provider>
     );
 }
  
