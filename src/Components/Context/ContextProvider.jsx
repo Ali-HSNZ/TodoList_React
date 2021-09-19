@@ -62,7 +62,7 @@ const  ContextProvider= ({children}) => {
     const [category,dispatchCategory] = useReducer( reduceCategory , initialStateCategory)
 
     return ( 
-        <></>
+       
         <product.Provider value={products}>
             <setProduct.Provider value={dispatch}>
 
