@@ -1,9 +1,9 @@
 
-import Add from '../Add/Add';
+// import Add from '../Add/Add';
 import ContextProvider from '../Context/ContextProvider';
-import Item from '../Item/Item';
+// import Item from '../Item/Item';
 import HeaderAndMenu from '../Navigation/Header&Menu';
-import SearchFilter from '../Search & Filter/SearchFilter';
+// import SearchFilter from '../Search & Filter/SearchFilter';
 import Styles from './Main.module.css'
 const Main = () => {
   return<>
@@ -14,9 +14,9 @@ const Main = () => {
               <ContextProvider>
 
                 <HeaderAndMenu/>
-                <Add/>
+                {/* <Add/>
                 <SearchFilter/>
-                <Item/>
+                <Item/> */}
 
               </ContextProvider>
           </div>
