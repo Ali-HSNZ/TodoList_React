@@ -13,10 +13,10 @@ const Main = () => {
               
               <ContextProvider>
 
-                <HeaderAndMenu/>
-                <Add/>
+                {/* <HeaderAndMenu/> */}
+                {/* <Add/>
                 <SearchFilter/>
-                <Item/>
+                <Item/> */}
 
               </ContextProvider>
           </div>
