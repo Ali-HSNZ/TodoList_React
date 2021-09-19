@@ -79,8 +79,8 @@ const  ContextProvider= ({children}) => {
  
 export default ContextProvider;
 
-// export const Products = () => useContext(product)  
-// export const SetProducts = () => useContext(setProduct)  
+export const products = () => useContext(product)  
+export const setProducts = () => useContext(setProduct)  
 
 // export const Category = () => useContext(categori)  
 // export const SetCategory = () => useContext(setCategori)  
