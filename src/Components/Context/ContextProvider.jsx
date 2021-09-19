@@ -18,8 +18,7 @@ const reduce = (state , action) => {
     switch(action.type){
         
         case 'AddProduct' : {
-            console.log("image src : ",action.ImgSrc)
-            return [...state,{Name : action.Name, Price : action.Price , describe : action.Des , categori: action.Category, imgSrc : action.ImgSrc}]
+            return [{Name : action.Name, Price : action.Price , describe : action.Des , categori: action.Category, imgSrc : action.ImgSrc}]
         }
         case 'Search' : {
             
@@ -27,11 +26,10 @@ const reduce = (state , action) => {
             
             const value = action.event.target.value
             // 
-            const products = [...state]
                 if(value ===""){
-                    return products
+                    return state
                 }else{
-                    return products.filter(item => item.Name.includes(value))
+                    return state.filter(item => item.Name.includes(value))
                 }
                  
         }
