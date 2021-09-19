@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import Styles from './AddProducts.module.css'
-import { setProducts , /*Category */} from '../../Context/ContextProvider';
+import { SetProducts , Category } from '../../Context/ContextProvider';
 
 const AddProduct = () => {
 
-    const dispatch = setProducts()
-    // const categoryState = Category()
-    const categoryState =0
+    const dispatch = SetProducts()
+    const categoryState = Category()
 
     const [name , setName] = useState('')
     const [price , setPrice] = useState('')

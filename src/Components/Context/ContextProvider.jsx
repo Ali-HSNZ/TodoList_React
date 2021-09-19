@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer } from "react";
+import React,{ createContext, useContext, useReducer } from "react";
 
 const initialState = ([
     {Name : "ماکارونی" ,Price : 250000 ,describe : ". این ماده خوراکی بیشتر در کارخانجات به صورت خشک تولید شده و پیش از خوردن جوشانده می‌شود. معنا و شکل ماکارونی در هر کشور یا منطقه تفاوت دارد. ",categori : "پاستا",imgSrc : ''},
@@ -79,8 +79,8 @@ const  ContextProvider= ({children}) => {
  
 export default ContextProvider;
 
-export const products = () => useContext(product)  
-export const setProducts = () => useContext(setProduct)  
+export const Products = () => useContext(product)  
+export const SetProducts = () => useContext(setProduct)  
 
 export const Category = () => useContext(categori)  
 export const SetCategory = () => useContext(setCategori)  
