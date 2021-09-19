@@ -27,10 +27,11 @@ const reduce = (state , action) => {
             
             const value = action.event.target.value
             // 
+            const products = [...state]
                 if(value ===""){
-                    return state
+                    return products
                 }else{
-                    return state.filter(item => item.Name.includes(value))
+                    return products.filter(item => item.Name.includes(value))
                 }
                  
         }
