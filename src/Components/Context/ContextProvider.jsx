@@ -9,7 +9,7 @@ const initialState = ([
   
 ])
 
-const initialStateCategory = ([])
+const initialStateCategory = ([''])
     
 
 
@@ -21,7 +21,7 @@ const reduce = (state , action) => {
             console.log("image src : ",action.ImgSrc)
             return [...state,{Name : action.Name, Price : action.Price , describe : action.Des , categori: action.Category, imgSrc : action.ImgSrc}]
         }
-        case 'search' : {
+        case 'Search' : {
             
             // const value = action.event
             

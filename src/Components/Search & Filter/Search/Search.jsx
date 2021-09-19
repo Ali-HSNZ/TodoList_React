@@ -1,5 +1,5 @@
 import Styles from "./Search.module.css";
-import { SetProducts, Category } from "../../Context/ContextProvider";
+import { SetProducts } from "../../Context/ContextProvider";
 import { useState } from "react/cjs/react.development";
 
 const Search = () => {
@@ -9,7 +9,7 @@ const Search = () => {
 
   const changeHandler= (e)=> {
       setSearch(e.target.value)
-      dispatch({ type: "search", event: e })
+      dispatch({ type: "Search", event: e })
 
   }
   return (
