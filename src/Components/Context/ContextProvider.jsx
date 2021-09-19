@@ -82,5 +82,5 @@ export default ContextProvider;
 export const products = () => useContext(product)  
 export const setProducts = () => useContext(setProduct)  
 
-// export const Category = () => useContext(categori)  
-// export const SetCategory = () => useContext(setCategori)  
+export const Category = () => useContext(categori)  
+export const SetCategory = () => useContext(setCategori)  
