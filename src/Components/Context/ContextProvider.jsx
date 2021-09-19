@@ -63,24 +63,24 @@ const  ContextProvider= ({children}) => {
 
     return ( 
         <></>
-        // <product.Provider value={products}>
-        //     <setProduct.Provider value={dispatch}>
+        <product.Provider value={products}>
+            <setProduct.Provider value={dispatch}>
 
-        //         <categori.Provider value={category}>
-        //             <setCategori.Provider value={dispatchCategory}>
-        //                     {children}
-        //             </setCategori.Provider>
-        //         </categori.Provider>
+                <categori.Provider value={category}>
+                    <setCategori.Provider value={dispatchCategory}>
+                            {children}
+                    </setCategori.Provider>
+                </categori.Provider>
                
-        //     </setProduct.Provider>
-        // </product.Provider>
+            </setProduct.Provider>
+        </product.Provider>
     );
 }
  
 export default ContextProvider;
 
-export const Products = () => useContext(product)  
-export const SetProducts = () => useContext(setProduct)  
+// export const Products = () => useContext(product)  
+// export const SetProducts = () => useContext(setProduct)  
 
-export const Category = () => useContext(categori)  
-export const SetCategory = () => useContext(setCategori)  
+// export const Category = () => useContext(categori)  
+// export const SetCategory = () => useContext(setCategori)  
