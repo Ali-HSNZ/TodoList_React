@@ -1,0 +1,84 @@
+.todoList{
+    width: 100%;
+    height: 26rem;
+    margin-top: 25px;
+    overflow-y: scroll;
+}
+.item{
+    width: 100%;
+    padding : 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bee1e6;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid rgb(89, 89, 255);
+}
+.noItemInList{
+    background-color:#ff1e0028;
+    font-family:iransansweb;
+    margin : 20px 0;
+    display: flex;
+    color: gray;
+    justify-content: center;
+    padding:10px 0;
+    
+}
+.noItemInList p{
+    margin: 0 5px;
+}
+.noItemInList span{
+    font-weight: 700;
+}
+.item p {
+    width: 100%;
+    font-size: 14px;
+    font-family: iransansweb;
+}
+.buttons{
+    display: flex;
+    
+}
+.itemActive{
+    background-color: #98ff9c;
+    border: 1px solid rgb(12, 151, 12);
+    border-radius: 8px;
+}
+.titleActive{
+    text-decoration:2px  line-through ;
+    color: rgb(99, 99, 99);
+}
+
+.Edit , .Complete , .delete{
+    cursor: pointer;
+    padding : 5px 10px;
+    margin-left:10px ;
+    
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: iransansweb;
+}
+.Edit {
+    box-shadow:  0 0 1px 0 rgb(0, 0, 255);
+    background-color: rgba(0, 0, 255, 0.171);
+}
+
+.Edit:hover{
+    box-shadow:  unset;
+}
+.Complete{
+    background-color: rgba(0, 255, 0, 0.219);
+    box-shadow:  0 0 2px 0 rgb(0, 165, 0);
+
+}
+.Complete:hover{
+    box-shadow:  unset;
+}
+.delete{
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    font-weight: 400;
+    box-shadow: unset;
+}
